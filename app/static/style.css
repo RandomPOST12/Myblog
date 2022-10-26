@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --primary-color:#141d2b;
+    --text-color:#ffffff;
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    padding: 5rem 20rem;
+}
+
+.container >p{
+    margin-top:2rem ;
+}
+
+.content{
+    margin-bottom: 4rem;
+}
+
+.note{
+    font-size: 1.2rem;
+    color: #a4b1cd;
+}
+
+.question{
+    color: #9fef00;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.answer{
+    margin-top: 1rem;
+    line-height: 1.6rem;
+}
+
+section{
+    margin-top: 5.5rem;
+}
+
+ul{
+    padding: 0 1rem;
+    margin-top: 1rem;
+}
+ul li{
+    margin-top: .5rem;
+}
+
+a{
+    text-decoration: underline dotted;
+    color: rgb(187, 130, 228);
+}
+
+img{
+    width: 60rem;
+    height: 12rem;
+    margin-top: 1rem;
+    border: 2px solid gray;
+}
+
+.congrats{
+    color: rgb(238, 19, 154);
+}
+
+.author{
+    display: flex;
+    justify-content: flex-end;
+    color: gray;
+   
+}
+
+
+@media only screen and (max-width: 650px) {
+
+
+    .container{
+        padding: 5rem 2rem;
+    }
+    img{
+        width: 100%;
+    }
+
+}
