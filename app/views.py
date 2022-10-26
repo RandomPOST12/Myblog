@@ -5,5 +5,8 @@ from blog.settings import main
 
 def home(request):
     blog  = Blog.objects.all()
-    main()
+    try:  
+        main()
+    except:
+        pass
     return render(request,'index.html',{'blogs':blog})
