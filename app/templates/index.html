@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Programmer Thought's</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Hello, Welcome to ProThought;s</h1>
+        <p>This blogs Contains Programmer Thought</p>
+
+        <section>
+            <div class="content">
+                <p class="question">What is CTF in terms of cybersecurity ?</p>
+                <p class="answer">Capture the Flag (CTF) in computer security is an exercise in which "flags" are secretly hidden in purposefully-vulnerable programs or websites. Competitors steal flags either from other competitors (attack/defense-style CTFs) or from the organizers (jeopardy-style challenges). Don't worry here you don't need to hack any application these CTF are very easy and made to give you a glimpse of actual CTF. These Labs are made focusing the knowledge of our participants.</p>
+                <p class="author">Author: Bunty</p>
+            </div>
+            {% for blogs in blogs %}
+            <div class="content">
+                <p class="question">{{blogs.title}}</p>
+                <p class="answer">{{blogs.des}}</p>
+                <p class="author">Author: {{blogs.author.username}}</p>
+            </div>
+            {% endfor %}
+
+        </section>
+
+    </div>
+
+
+
+</body>
+</html>
